@@ -104,6 +104,9 @@ class Index
 			case "Adm":		$page = new Admin();
 							$page->toHTML();
 							break;
+			case "Ajax":	$ajaxCall = new Ajax();
+							echo $ajaxCall->response();
+							break;
 		}
 	}
 }
